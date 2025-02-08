@@ -56,7 +56,7 @@ namespace TCPData
             new Products { Id = 7, Name = "Keyboard", Price = 50.49m, Category = "Electronics", IsStocked = true },
             new Products { Id = 8, Name = "Mouse", Price = 30.99m, Category = "Electronics", IsStocked = false },
             new Products { Id = 15, Name = "Printer", Price = 180.00m, Category = "Office Supplies", IsStocked = true },
-            new Products { Id = 1, Name = "Notebook", Price = 5.99m, Category = "Office Supplies", IsStocked = true }
+            new Products { Id = 1, Name = "Notebook", Price = 5.99m, Category = "Office Supplies", IsStocked = false }
         };
 
             return products;

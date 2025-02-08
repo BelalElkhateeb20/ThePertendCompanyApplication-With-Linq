@@ -42,7 +42,8 @@ namespace ThePertendCompanyApplication
             {
                 Console.WriteLine(item);
             }
-            Console.WriteLine(" ");
+            Console.WriteLine("\n ");
+
             //Case Two of Select >>Indexed Select Valid only in fluent syntax Query
             List<Products> products = Data.GetProducts();
             var Result =products.Select((sel,i) => new { index=i, Category = sel.Category, IsStocked = sel.IsStocked });
@@ -50,13 +51,26 @@ namespace ThePertendCompanyApplication
             {
                 Console.WriteLine(items);
             }
-//OrderBy Elements (OrderBy,OrderByDescending,.ThenBy.ThenByDescending)
+            Console.WriteLine("\n ");
+
+//OrderBy Elements (OrderBy,OrderByDescending,.ThenBy.ThenByDescending) Imidiate Execution
             var order = products.OrderBy(p => p.Id).Select(sel => new {id=sel.Id, Price = sel.Price});// From the small to large
             //var order = products.OrderByDescending(p => p.Id).Select(sel => new {id=sel.Id, Price = sel.Price}); // reverse to orderby
+//Element Operator >>return singel element-Imidiate Execution 
+            var last = products.Last(p => p.IsStocked == true);
+            Console.WriteLine(last?.Name??"nA"); //single Element
             foreach (var i in order)
             {
                 Console.WriteLine(i);
             }
+            List<int> nums = new List<int>();
+            var empty = nums.FirstOrDefault();// return First element or defult value if seq is empty
+            var empty1 = nums.LastOrDefault();// return last element or defult value if seq is empty
+            var empty2 = nums.LastOrDefault(p=>p/*.....*/==0);// return last element or defult value if seq is empty
+            // NO Element Matching the predicate use FirstOrDefault
+
+
+
             Console.ReadLine();
         }
     }
