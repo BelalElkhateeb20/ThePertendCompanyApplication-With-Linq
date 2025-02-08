@@ -48,15 +48,15 @@ namespace TCPData
             List<Products> products = new List<Products>
         {
             new Products { Id = 1, Name = "Laptop", Price = 1200.50m, Category = "Electronics", IsStocked = true },
-            new Products { Id = 2, Name = "Smartphone", Price = 800.99m, Category = "Electronics", IsStocked = true },
+            new Products { Id = 8, Name = "Smartphone", Price = 800.99m, Category = "Electronics", IsStocked = true },
             new Products { Id = 3, Name = "Office Chair", Price = 150.75m, Category = "Furniture", IsStocked = false },
             new Products { Id = 4, Name = "Desk", Price = 300.00m, Category = "Furniture", IsStocked = true },
             new Products { Id = 5, Name = "Headphones", Price = 100.25m, Category = "Electronics", IsStocked = false },
-            new Products { Id = 6, Name = "Monitor", Price = 250.99m, Category = "Electronics", IsStocked = true },
+            new Products { Id = 18, Name = "Monitor", Price = 250.99m, Category = "Electronics", IsStocked = true },
             new Products { Id = 7, Name = "Keyboard", Price = 50.49m, Category = "Electronics", IsStocked = true },
             new Products { Id = 8, Name = "Mouse", Price = 30.99m, Category = "Electronics", IsStocked = false },
-            new Products { Id = 9, Name = "Printer", Price = 180.00m, Category = "Office Supplies", IsStocked = true },
-            new Products { Id = 10, Name = "Notebook", Price = 5.99m, Category = "Office Supplies", IsStocked = true }
+            new Products { Id = 15, Name = "Printer", Price = 180.00m, Category = "Office Supplies", IsStocked = true },
+            new Products { Id = 1, Name = "Notebook", Price = 5.99m, Category = "Office Supplies", IsStocked = true }
         };
 
             return products;

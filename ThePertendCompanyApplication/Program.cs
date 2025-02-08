@@ -50,7 +50,13 @@ namespace ThePertendCompanyApplication
             {
                 Console.WriteLine(items);
             }
-
+//OrderBy Elements (OrderBy,OrderByDescending,.ThenBy.ThenByDescending)
+            var order = products.OrderBy(p => p.Id).Select(sel => new {id=sel.Id, Price = sel.Price});// From the small to large
+            //var order = products.OrderByDescending(p => p.Id).Select(sel => new {id=sel.Id, Price = sel.Price}); // reverse to orderby
+            foreach (var i in order)
+            {
+                Console.WriteLine(i);
+            }
             Console.ReadLine();
         }
     }
