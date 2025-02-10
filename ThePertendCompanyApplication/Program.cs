@@ -69,6 +69,20 @@ namespace ThePertendCompanyApplication
             var empty2 = nums.LastOrDefault(p=>p/*.....*/==0);// return last element or defult value if seq is empty
             // NO Element Matching the predicate use FirstOrDefault
 
+            var isfound = products.Any(c=>c.Name== "Laptop."||c.Price<2000);
+            Console.WriteLine(isfound  ? "Found" : "Not Found");
+
+            var All = products.Any(c=>c.Price<2000);
+            Console.WriteLine(All);
+            var count = products.Count(c=>c.Id<5);
+            Console.WriteLine(count);
+            var Longcount = products.LongCount();
+            Console.WriteLine(Longcount);
+            //var countBy = products.CountBy();//.net 9
+            
+
+
+
 
 
             Console.ReadLine();
